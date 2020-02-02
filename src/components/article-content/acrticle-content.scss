@@ -1,0 +1,21 @@
+@import "../../styles/main.scss";
+main {
+  #article-content {
+    @include wrapper();
+    padding: 0 30px;
+    h3 {
+      margin: 70px 0 100px 0;
+      color: #929292;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 27px;
+      text-transform: uppercase;
+    }
+    p {
+      color: #282828;
+      font-size: 19px;
+      font-weight: 300;
+      line-height: 29px;
+    }
+  }
+}

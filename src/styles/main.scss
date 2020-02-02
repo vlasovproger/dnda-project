@@ -1,0 +1,23 @@
+@import "smart-grid";
+@import "fonts";
+@import "vars";
+@include reset();
+
+body {
+  font-family: Lato, sans-serif;
+}
+
+#__next {
+  overflow-x: hidden;
+}
+
+.switch-wrapper {
+  position: relative;
+}
+
+.switch-wrapper > div {
+  position: absolute;
+}
+a {
+  text-decoration: none;
+}

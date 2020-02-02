@@ -1,0 +1,19 @@
+header.article {
+  .wrapper {
+    #hero-section {
+      align-items: flex-start;
+      justify-content: center;
+      text-align: left;
+      h1 {
+        font-size: 28px;
+        font-weight: 600;
+      }
+      p {
+        font-size: 22px;
+      }
+      .to-articles {
+        display: none;
+      }
+    }
+  }
+}

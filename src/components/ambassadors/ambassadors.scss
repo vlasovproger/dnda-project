@@ -1,0 +1,71 @@
+@import "../../styles/main";
+#ambassadors {
+  text-align: center;
+  padding: 100px 0;
+  .wrapper {
+    @include wrapper();
+
+    .section-title {
+      @include row-flex();
+      flex-direction: column;
+      align-items: center;
+      .title {
+        @include col();
+        @include size(7);
+        @include size-sm(10);
+        @include size-xs(11);
+        color: #1f1f1f;
+        font-size: 49px;
+        font-weight: 700;
+        font-style: italic;
+        text-transform: uppercase;
+      }
+      .description {
+        margin-top: 81px;
+        @include col();
+        @include size(10);
+        color: #1f1f1f;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 27px;
+      }
+    }
+    ul {
+      margin-top: 100px;
+      @include row-flex();
+      justify-content: center;
+      li {
+        @include col();
+        @include size(4);
+        @include size-md(5);
+        @include size-sm(8);
+        @include size-xs(10);
+        margin-bottom: 30px;
+        //padding: 40px 32px 46px 32px;
+        h3 {
+          margin: 30px 0;
+          color: #1f1f1f;
+          font-size: 36px;
+          font-weight: 400;
+        }
+        p {
+          color: #4e4e4e;
+          font-size: 14px;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  #ambassadors {
+    .wrapper {
+      .section-title {
+        .title {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+}

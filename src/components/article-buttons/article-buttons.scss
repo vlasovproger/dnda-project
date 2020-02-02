@@ -1,0 +1,30 @@
+.article-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 90px 0;
+  .btn {
+    border: 1px solid #8a8a8a;
+    padding: 20px 70px;
+    color: #282828;
+    font-size: 17px;
+    line-height: 24px;
+    transition: all 0.5s ease;
+    &:hover {
+      color: #fff;
+      background-color: #282828;
+    }
+  }
+  &.first {
+    .prev-article {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .article-buttons {
+    .btn {
+      padding: 10px 30px;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+main,
+header,
+footer {
+  transition: margin 0.6s ease;
+  &.menu-active {
+    margin: 0 -400px 0 400px;
+  }
+}

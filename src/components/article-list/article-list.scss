@@ -1,0 +1,19 @@
+.article-list {
+  li:nth-child(even) {
+    .article-list-item {
+      img {
+        order: 1;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  li:nth-child(even) {
+    .article-list-item {
+      img {
+        order: unset!important;
+      }
+    }
+  }
+}

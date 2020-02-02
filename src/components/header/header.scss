@@ -1,0 +1,269 @@
+@import "../../styles/main";
+
+header {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)) no-repeat center;
+  background-size: cover;
+  div {
+    height: 100%;
+  }
+  &.menu-active {
+    .wrapper {
+      nav {
+        left: 400px;
+      }
+    }
+  }
+  .wrapper {
+    @include wrapper();
+    height: 100%;
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 160px;
+      padding: 85px 90px 0 90px;
+      box-sizing: border-box;
+      transition: all 0.6s ease;
+      &.navShadow {
+        height: 130px;
+        background: $accent-color1;
+        padding: 20px 90px 0 90px;
+        box-shadow: 0 4px 30px -5px rgba(#000, 0.2);
+        img {
+          filter: invert(50%);
+        }
+        .menu-icon {
+          .bar {
+            background-color: $bg-color1;
+          }
+        }
+        .ambassadors {
+          color: $bg-color1;
+          width: 110px;
+        }
+      }
+      .nav-items {
+        &.menu-active {
+          left: 0;
+        }
+        box-sizing: border-box;
+        background-color: #1c2023;
+        width: 400px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 93px;
+        text-align: right;
+        position: fixed;
+        transform: none;
+        left: -400px;
+        top: 0;
+        transition: left 0.6s ease;
+        .ambassadors-nav-item {
+          visibility: hidden;
+        }
+        li {
+          margin-top: 70px;
+          display: flex;
+          justify-content: flex-end;
+
+          .mobile-icon {
+            visibility: hidden;
+            width: 110px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            border-radius: 50%;
+            cursor: pointer;
+            .bar {
+              background-color: $accent-color1;
+              width: 25px;
+              height: 1px;
+              &:first-child {
+                transform: rotate(45deg);
+              }
+              &:last-child {
+                transform: translateY(-2px) rotate(-45deg);
+              }
+            }
+          }
+          a {
+            color: $accent-color1;
+            font-weight: 200;
+            text-decoration: none;
+            font-size: 25px;
+          }
+        }
+      }
+      .menu-icon {
+        width: 110px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        cursor: pointer;
+        .bar {
+          background-color: $accent-color1;
+          width: 25px;
+          height: 2px;
+          transition: 0.3s ease-in-out;
+          &:nth-child(2) {
+            width: 20px;
+            margin: 5px 0;
+          }
+          &:last-child {
+            width: 15px;
+          }
+        }
+        &:hover .bar {
+          width: 25px;
+        }
+        &.closeMenu {
+          .bar {
+            width: 25px;
+            &:first-child {
+              transform: translateY(7px) rotate(45deg);
+            }
+            &:nth-child(2) {
+              transform: scale(0);
+            }
+            &:last-child {
+              transform: translateY(-7px) rotate(-45deg);
+            }
+          }
+        }
+      }
+      .ambassadors {
+        color: $accent-color1;
+        font-size: 14px;
+        text-transform: uppercase;
+      }
+    }
+    #hero-section {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      box-sizing: border-box;
+      h1 {
+        color: $accent-color1;
+        font-size: 54px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 63px;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+      p {
+        margin-bottom: 76px;
+        color: $accent-color1;
+        font-size: 18px;
+        font-weight: 300;
+        max-width: 1000px;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+      .to-articles {
+        color: $accent-color1;
+        font-size: 17px;
+        text-transform: uppercase;
+        border: 1px solid #ffffff;
+        width: 275px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 49px;
+        //margin: 76px 0;
+        transition: all 0.4s ease;
+        cursor: pointer;
+        &:hover {
+          color: #000;
+          background: $accent-color1;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  header {
+    .wrapper {
+      nav {
+        padding: 0 30px 0 30px !important;
+        width: 100vw;
+        box-sizing: border-box;
+      }
+      #hero-section {
+        padding: 20% 30px 5% 30px;
+        justify-content: space-around;
+        h1 {
+          margin: 0;
+          font-size: 24px;
+        }
+        p {
+          margin: 0;
+        }
+        .to-articles {
+          font-size: 14px;
+          width: 275px;
+          height: 49px;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 780px) {
+  header {
+    .wrapper {
+      nav {
+        height: 100px;
+        img {
+          width: 66px;
+        }
+        &.navShadow {
+          border-radius: 0 0 15px 15px;
+          height: 80px;
+          #menu-hamburger {
+            top: 25px;
+          }
+        }
+        justify-content: center;
+        #menu-hamburger {
+          position: absolute;
+          top: 42px;
+          left: 25px;
+          transition: top 0.5s ease;
+        }
+        .ambassadors {
+          display: none;
+        }
+        ul.nav-items {
+          padding-right: 0;
+          width: 100vw;
+          left: -100vw;
+          align-items: center;
+          text-align: center;
+          .ambassadors-nav-item {
+            visibility: visible;
+          }
+          li {
+            .mobile-icon {
+              position: absolute;
+              top: 65px;
+              right: 15px;
+              align-items: center;
+              visibility: visible;
+            }
+          }
+        }
+      }
+    }
+  }
+}
