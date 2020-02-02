@@ -96,7 +96,7 @@ export class HeaderContainer extends Component {
     if (this.props.parent) {
       classNamesHeader += " " + parent;
     }
-    
+
 
     return (
       <Header
@@ -104,7 +104,6 @@ export class HeaderContainer extends Component {
         classNamesHeader={classNamesHeader}
         classNamesNav={classNamesNav}
         parent={this.parentButton(parent)}
-        backgroundUrl={backgroundUrl}
         onHamburgerToggle={onHamburgerToggle}
         subTitle={subTitle}
         title={title}
