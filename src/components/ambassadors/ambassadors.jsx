@@ -16,7 +16,7 @@ class Ambassadors extends Component {
           title="Welcome to DNDA"
           subTitle="Join Dandelion to discover a world of remarkable stories, told by some of the most inspiring photographers, writers, and 
 adventurers on the planet, and to publish and share your stories as part of our thoughtful community."
-          imageUrl="/images/ambassadors-background-image.png"
+          imageUrl="/images/ambassadors-background-image.jpg"
         />
         <main className={classNamesMain}>
           <section id="ambassadors">

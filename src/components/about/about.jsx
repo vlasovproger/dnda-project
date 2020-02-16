@@ -15,7 +15,7 @@ class About extends Component {
         <HeaderContainer
           title="John Doe"
           subTitle="hello my name is"
-          imageUrl="/images/aboutpage-background-image.png"
+          imageUrl="/images/aboutpage-background-image.jpg"
           parent="about"
         />
         <main className={classNamesMain}>

@@ -13,7 +13,7 @@ export class HomeHeader extends Component {
               erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
               tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
               consequat."
-        imageUrl="/images/header-background-image.png"
+        imageUrl="/images/header-background-image.jpg"
       />
     );
   }

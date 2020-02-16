@@ -10,7 +10,7 @@ const NextArticles = ({ fetchNextStepArticles }) => {
     <section
       id="next-articles"
       className="lazy"
-      data-bg="linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(/images/next-articles-background-image.png)"
+      data-bg="linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(/images/next-articles-background-image.jpg)"
       style={{
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",

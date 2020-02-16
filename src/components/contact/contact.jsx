@@ -15,7 +15,7 @@ class Contact extends Component {
         <HeaderContainer
           title="Find me on"
           subTitle={null}
-          imageUrl="/images/contact-background-image.png"
+          imageUrl="/images/contact-background-image.jpg"
           parent="contact"
         />
         <main className={classNamesMain}>
