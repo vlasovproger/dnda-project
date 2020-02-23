@@ -106,6 +106,8 @@ header {
         align-items: center;
         border-radius: 50%;
         cursor: pointer;
+        display: flex;
+        flex-direction: column;
         .bar {
           background-color: $accent-color1;
           width: 25px;
@@ -229,7 +231,7 @@ header {
           border-radius: 0 0 15px 15px;
           height: 80px;
           #menu-hamburger {
-            top: 25px;
+            top: 0;
           }
         }
         justify-content: center;
