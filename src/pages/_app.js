@@ -9,7 +9,6 @@ import { register, unregister } from "next-offline/runtime";
 import withReduxStore from "../lib/with-redux-store";
 import { PageTransition } from "next-page-transitions";
 
-
 const contentService = new ContentService();
 
 class MyApp extends App {
@@ -19,6 +18,7 @@ class MyApp extends App {
     if (Component.getInitialProps) {
       pageProps = await Component.getInitialProps(ctx);
     }
+
 
     return { pageProps };
   }

@@ -15,8 +15,7 @@
   },
   "dependencies": {
     "axios": "^0.19.0",
-    "faker": "^4.1.0",
-    "lorem-ipsum": "^2.0.3",
+    "firebase": "^7.9.1",
     "module-alias": "^2.2.2",
     "moment": "^2.24.0",
     "next": "^9.2.1",
@@ -34,6 +33,8 @@
   "devDependencies": {
     "@zeit/next-preact": "^0.1.0",
     "@zeit/next-sass": "^1.0.1",
+    "babel-plugin-inline-dotenv": "^1.1.1",
+    "babel-plugin-transform-inline-environment-variables": "^0.2.0",
     "node-sass": "^4.13.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
