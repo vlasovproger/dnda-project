@@ -5,7 +5,7 @@ export default class ContentService {
     const articlesRef = firebase
       .database()
       .ref("articles/articles")
-      .orderByChild("id")
+      .orderByKey()
       .startAt(`${step * 5}`)
       .limitToFirst(5);
     let result = await new Promise((resolve, reject) => {
@@ -31,9 +31,7 @@ export default class ContentService {
 
     console.log(Object.values(result.val())[0]);
     const article = Object.values(result.val())[0];
-    console.log(article.imageUrl);
     article.imageUrl = article.imageUrl.replace(/[0-9/]{4,7}$/, "1920/1080");
-    console.log(article.imageUrl);
     return article;
   };
 }
