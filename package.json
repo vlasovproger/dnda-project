@@ -14,30 +14,30 @@
     "node": "12.x"
   },
   "dependencies": {
-    "axios": "^0.19.0",
-    "firebase": "^7.9.1",
+    "axios": "^0.19.2",
+    "firebase": "^7.13.1",
     "module-alias": "^2.2.2",
     "moment": "^2.24.0",
-    "next": "^9.2.1",
-    "next-offline": "^5.0.0-beta.11",
+    "next": "^9.3.3",
+    "next-offline": "^5.0.0",
     "next-page-transitions": "^1.0.0-beta.2",
-    "preact": "^10.2.1",
-    "preact-render-to-string": "^5.1.3",
-    "preact-ssr-prepass": "^1.0.0",
+    "preact": "^10.3.4",
+    "preact-render-to-string": "^5.1.4",
+    "preact-ssr-prepass": "^1.0.1",
     "react-parallax": "^3.0.3",
-    "react-redux": "^7.1.3",
+    "react-redux": "^7.2.0",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
-    "vanilla-lazyload": "^12.4.0"
+    "vanilla-lazyload": "^15.1.0"
   },
   "devDependencies": {
     "@zeit/next-preact": "^0.1.0",
     "@zeit/next-sass": "^1.0.1",
-    "babel-plugin-inline-dotenv": "^1.1.1",
-    "babel-plugin-transform-inline-environment-variables": "^0.2.0",
-    "node-sass": "^4.13.0",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
+    "babel-plugin-inline-dotenv": "^1.5.0",
+    "babel-plugin-transform-inline-environment-variables": "^0.4.3",
+    "node-sass": "^4.13.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "redux-devtools-extension": "^2.13.8"
   }
 }
