@@ -10,11 +10,11 @@ const NextArticles = ({ fetchNextStepArticles }) => {
     <section
       id="next-articles"
       className="lazy"
-      data-bg="linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(/images/next-articles-background-image.jpg)"
+      data-bg="/images/next-articles-background-image.jpg"
       style={{
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
-        backgroundSize: "cover"
+        backgroundSize: "cover",
       }}
     >
       <h3>Explore the world from a new perspective</h3>
@@ -28,7 +28,7 @@ const NextArticles = ({ fetchNextStepArticles }) => {
 const mapDispatchToProps = (dispatch, { contentService, step }) => {
   return bindActionCreators(
     {
-      fetchNextStepArticles: fetchNextStepArticles(contentService, step)
+      fetchNextStepArticles: fetchNextStepArticles(contentService, step),
     },
     dispatch
   );

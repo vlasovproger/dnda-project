@@ -8,7 +8,7 @@ export default class RecommendedArticleListItem extends Component {
   componentDidMount() {
     if (!document.lazyLoadInstance) {
       document.lazyLoadInstance = new LazyLoad({
-        elements_selector: ".lazy"
+        elements_selector: ".lazy",
       });
     }
     document.lazyLoadInstance.update();
@@ -19,17 +19,17 @@ export default class RecommendedArticleListItem extends Component {
   }
   render() {
     const { imageUrl, title, id, category, date, author } = this.props;
-    const backgroundUrl = `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(${imageUrl})`;
+
     return (
       <Link href="/article/[id]" as={`/article/${id}`}>
         <a>
           <div
             className="recommended-article-list-item lazy"
-            data-bg={backgroundUrl}
+            data-bg={imageUrl}
             style={{
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
-              backgroundSize: "cover"
+              backgroundSize: "cover",
             }}
           >
             <div className="recommended-article-list-item-content">
